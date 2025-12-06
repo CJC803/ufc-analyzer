@@ -1,0 +1,13 @@
+Using free public browsing, identify the next UFC event.
+
+Return JSON ONLY:
+
+{
+  "event_name": "",
+  "event_date": "",
+  "location": "",
+  "event_url": "",
+  "fight_card": [
+      {"fighter_a": "", "fighter_b": ""}
+  ]
+}
