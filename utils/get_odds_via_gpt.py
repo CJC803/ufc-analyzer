@@ -1,4 +1,5 @@
-import openai
+# utils/get_odds_via_gpt.py
+from utils.openai_client import client
 
 def get_fight_odds(fighter_a, fighter_b):
     prompt = f"""
@@ -11,17 +12,17 @@ Prefer:
 - ESPN
 
 Return JSON ONLY:
-{
+{{
   "fighter_a": "",
   "fighter_b": "",
   "implied_a": 0,
   "implied_b": 0,
   "source": ""
-}
+}}
 """
-    res = openai.ChatCompletion.create(
+    res = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}],
         temperature=0
     )
-    return res["choices"][0]["message"]["content"]
+    return res.choices[0].message.content
