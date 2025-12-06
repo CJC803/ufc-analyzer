@@ -1,0 +1,16 @@
+Analyze the merged dataset for each fight:
+
+Include:
+- Fight history from Tapology
+- Record + early career from Sherdog
+- Striking and grappling stats from UFCStats
+- Odds and implied probabilities
+- Technical breakdown
+- Tactical advantages
+- Momentum analysis
+- Red flags (KO losses, layoffs, weight cuts)
+- Confidence score (0–100)
+- Winner + method prediction
+- 3 parlays (Safe, Value, Chaos)
+
+Respond in clean Markdown.
